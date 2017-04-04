@@ -2,6 +2,12 @@
 
 namespace NonceWrapper;
 
+
+/**
+ * Class WpNonceWrapper
+ * Provides Wordpress' "nonce" functionality for an object-oriented environment.
+ *
+ */
 class WpNonceWrapper {
 
     /**
@@ -28,7 +34,7 @@ class WpNonceWrapper {
     /**
      * Generates two hidden fields to add a nonce to a form.
      *
-     * @param int|string    $action     Optional. Name of the action. Default -1.
+     * @param int|string    $action     Optional. Name of the action0. Default -1.
      * @param string        $name       Optional. Name of the nonce. Default '_wpnonce'.
      * @param bool          $referer    Optional. If true, set the referer field for validation. Default true.
      * @param bool          $echo       Optional. Whether to display or return the hidden form field. Default true.
@@ -60,7 +66,5 @@ class WpNonceWrapper {
     public static function verify_nonce( $nonce, $action = -1) {
         return wp_verify_nonce( $nonce, $action );
     }
-
-
 
 }
