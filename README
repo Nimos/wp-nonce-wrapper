@@ -33,3 +33,9 @@ Display an are you sure dialogue, to manually confirm an action:
 ```php
 WpNonceWrapper::nonce_ays( $someAction );
 ```
+
+
+# Testing
+
+To run the tests, run `vendor\bin\phpunit tests\WrapperTest.php`
+You will likely have to update WP_DIR in the test file to point to your Wordpress installation.
