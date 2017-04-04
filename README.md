@@ -1,6 +1,12 @@
 # Wordpress Nonce Wrapper
 
-This wrapper provides Wordpress' "nonce" functionality for an object-oriented environment.
+This wrapper provides Wordpress' nonce functionality in an object-oriented environment.
+
+# Installation
+
+To install the package, run `composer require nimos/wp-nonce-wrapper`.  
+Alternatively, you can download the zip file from Github, and run `composer update` to install the dependencies.
+
 
 # Usage
 
@@ -37,5 +43,5 @@ WpNonceWrapper::nonce_ays( $someAction );
 
 # Testing
 
-To run the tests, run `vendor\bin\phpunit tests\WrapperTest.php`
+To run the tests, run `vendor\bin\phpunit tests\WrapperTest.php`  
 You will likely have to update WP_DIR in the test file to point to your Wordpress installation.
